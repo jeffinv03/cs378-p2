@@ -1,5 +1,7 @@
 import './App.css';
 import MenuItem from './components/MenuItem';
+import Header from './components/Header'; // Make sure the import path matches the location of your Header component
+
 
 // import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
@@ -82,10 +84,17 @@ const menuItems = [
 function App() {
   return (
     <div>
-      <h1>Menu</h1>
+      <Header />
       <div className="menu">
-        {/* Display menu items dynamicaly here by iterating over the provided menuItems */}
-        <MenuItem title={menuItems[0].title} /> {/* Example for how to use a component */}
+        {menuItems.map((item) => (
+          <MenuItem
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            imageName={item.imageName}
+            price={item.price}
+          />
+        ))}
       </div>
     </div>
   );

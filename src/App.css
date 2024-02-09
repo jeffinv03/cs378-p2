@@ -1,8 +1,77 @@
-/* 
-  Style your elements by creating CSS classes here.
-  Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
-*/
-
-.menu {
-  color: blue;
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px; /* Adjust spacing between menu items */
+  margin-left: 20px; /* Adjust spacing between menu items */
 }
+
+.food-image {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* Add styles for the title, description, and price */
+.title {
+  align-self: flex-start; /* Ensure title aligns at the start */
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0; /* Reset any top margin to align with the image */
+}
+
+.description {
+  font-size: 1em; /* Adjust the font size as needed */
+  margin-bottom: 25px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 70%; /* Set a specific width for the description */
+  font-weight: lighter;
+}
+
+.price {
+  font-size: 1em;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Add styles for the "Add" button */
+.addButton {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 1px 10px; /* Adjust the padding for a smaller size */
+  border-radius: 10px; /* Adjust the border-radius for a round shape */
+  cursor: pointer;
+  font-size: 1em; /* Adjust the font size as needed */
+  margin-left: 160px; /* Adjust the margin to move it more to the right */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; /* Adjust as needed */
+  margin-bottom: 70px; /* Adds bottom margin */
+}
+.logo {
+  width: 40%; /* Adjust as needed */
+  margin-bottom: 2rem; /* Provides space between the logo and the text */
+}
+
+.subheading{
+  color: orange;
+  font-family: 'Pacifico', cursive;
+  margin-top: 0px;
+  font-size: 20px;
+
+} 
+
+.titleSub {
+  margin-top: 5px;;
+  font-family: 'Brush Script MT', cursive, sans-serif;
+  font-size: 25px;
+}
+/* Ensure you align text and button to the layout as shown in the mockup */
